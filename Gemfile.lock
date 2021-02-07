@@ -54,7 +54,6 @@ DEPENDENCIES
   jekyll-feed
   jekyll-paginate
   jekyll-sitemap
-  rouge (~> 1.0)
 
 BUNDLED WITH
    1.16.0
