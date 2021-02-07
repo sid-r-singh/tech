@@ -17,11 +17,16 @@ To add new posts, simply add a file in the `_posts` directory that follows the c
 
 Jekyll also offers powerful support for code snippets:
 
-{% highlight ruby %}
-def foo
-  puts 'foo'
-end
-{% endhighlight %}
+```python
+reveal_type(stringify_iterable_items([1, 2, 3]))
+# Revealed type is 'typing.Iterable[builtins.str]'
+
+reveal_type(stringify_iterable_items({1, 2, 3}))
+#  Revealed type is 'typing.Iterable[builtins.str]'
+
+reveal_type(stringify_iterable_items((1, 2, 3)))
+#  Revealed type is 'typing.Iterable[builtins.str]'
+```
 
 Check out the [Jekyll docs][jekyll] for more info on how to get the most out of Jekyll. File all bugs/feature requests at [Jekyll’s GitHub repo][jekyll-gh]. If you have questions, you can ask them on [Jekyll’s dedicated Help repository][jekyll-help].
 
